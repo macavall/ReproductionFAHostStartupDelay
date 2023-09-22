@@ -12,10 +12,11 @@ internal class Program
         .ConfigureFunctionsWorkerDefaults()
         .ConfigureServices(services =>
         {
-            //Console.WriteLine("Before the minutes delay");
+            //Console.WriteLine("Before the delay");
             //Thread.Sleep(10000);
-            //Console.WriteLine("After the minutes delay");
+            //Console.WriteLine("After the delay");
             services.AddScoped<IMyService, MyService>();
+            services.AddScoped<MyService2>();
         })
         .Build();
 
