@@ -33,6 +33,19 @@ internal class Program
 }
 ```
 
+Interface
+
+```Csharp
+using Microsoft.Extensions.Logging;
+using System.Threading.Tasks;
+
+public  interface IMyService
+{
+    Task MyServiceMethod();
+}
+```
+
+Concrete Service Class
 
 ```Csharp
 using Microsoft.Extensions.Logging;
@@ -64,16 +77,3 @@ public class MyService : IMyService
     }
 }
 ```
-
-Interface
-
-```Csharp
-using Microsoft.Extensions.Logging;
-using System.Threading.Tasks;
-
-public  interface IMyService
-{
-    Task MyServiceMethod();
-}
-```
-
