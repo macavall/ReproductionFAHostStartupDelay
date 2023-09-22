@@ -12,7 +12,7 @@ public class MyService : IMyService
         Ilogger = _Ilogger;
         Console.WriteLine("MyService Constructor Starting");
         Ilogger.LogInformation("MyService Constructor Starting");
-        //Console.WriteLine("Staring Delay");
+        //Console.WriteLine("Starting Delay");
         //System.Threading.Thread.Sleep(10000);
         //Console.WriteLine("Ending Delay");
         MyServiceInt = 0;
