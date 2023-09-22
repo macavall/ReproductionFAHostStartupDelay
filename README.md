@@ -21,9 +21,9 @@ internal class Program
         .ConfigureFunctionsWorkerDefaults()
         .ConfigureServices(services =>
         {
-            //Console.WriteLine("Before the minutes delay");
+            //Console.WriteLine("Before the delay");
             //Thread.Sleep(10000);
-            //Console.WriteLine("After the minutes delay");
+            //Console.WriteLine("After the delay");
             services.AddScoped<IMyService, MyService>();
         })
         .Build();
@@ -62,7 +62,7 @@ public class MyService : IMyService
         Ilogger = _Ilogger;
         Console.WriteLine("MyService Constructor Starting");
         Ilogger.LogInformation("MyService Constructor Starting");
-        //Console.WriteLine("Staring Delay");
+        //Console.WriteLine("Starting Delay");
         //System.Threading.Thread.Sleep(10000);
         //Console.WriteLine("Ending Delay");
         MyServiceInt = 0;
