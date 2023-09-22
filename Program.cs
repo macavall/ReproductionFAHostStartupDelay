@@ -14,7 +14,7 @@ internal class Program
         {
             //Console.WriteLine("Before the minutes delay");
             //Thread.Sleep(10000);
-            //Console.WriteLine("After the minutes delay");
+            //Console.WriteLine("After the minutes delay"); 
             services.AddScoped<IMyService, MyService>();
         })
         .Build();
