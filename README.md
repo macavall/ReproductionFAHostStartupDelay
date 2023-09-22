@@ -77,3 +77,13 @@ public class MyService : IMyService
     }
 }
 ```
+
+
+---
+
+# When running this Function App locally here are the results
+![SerBusStartup](https://github.com/macavall/ReproductionFAHostStartupDelay/assets/43223084/b98e0cfe-e80c-4169-b5c9-7031988be9e0)
+
+
+
+
